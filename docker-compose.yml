@@ -1,7 +1,6 @@
 version: '3.8'
 services:
   ui:
-    image: 494234474945.dkr.ecr.us-east-2.amazonaws.com/cicd-jenkins-docker:ui
     build:
       context: ./ui
       dockerfile: Dockerfile

@@ -26,8 +26,8 @@ app.get('/api/data', (req, res) => {
   // Replace this with your actual data fetching logic from the database
   const data = [
     { id: 1, name: 'John' },
-    { id: 2, name: 'Aftab' },
-    { id: 2, name: 'Muaiz' },
+    { id: 2, name: 'Adil' },
+    { id: 2, name: 'Shoaib' },
   ];
 
   res.json(data);

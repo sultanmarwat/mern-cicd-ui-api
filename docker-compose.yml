@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   ui:
-    image: 494234474945.dkr.ecr.us-east-2.amazonaws.com/cicd-jenkins-docker:ui
+    image: 494234474945.dkr.ecr.us-east-2.amazonaws.com/cicd-jenkins-docker/ui:latest
     build:
       context: ./ui
       dockerfile: Dockerfile
@@ -9,7 +9,7 @@ services:
       - "3000:3000"
 
   api:
-    image: 494234474945.dkr.ecr.us-east-2.amazonaws.com/cicd-jenkins-docker:api
+    image: 494234474945.dkr.ecr.us-east-2.amazonaws.com/cicd-jenkins-docker/api:latest
     build:
       context: ./api
       dockerfile: Dockerfile

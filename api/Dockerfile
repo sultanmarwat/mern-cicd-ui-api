@@ -13,8 +13,8 @@ RUN npm install --force
 ## Copy the rest of the backend files to the container
 COPY . ./
 
-# Expose the port on which the API will run
+ #Expose the port on which the API will run
 EXPOSE 5000
 
-# Start the API server
+# Start the API server ..
 CMD ["npm", "start"]

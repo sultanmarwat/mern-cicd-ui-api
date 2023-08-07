@@ -22,3 +22,5 @@ services:
     image: mongo:latest
     ports:
       - "27017:27017"
+    volumes:
+      - /home/zahid/Downloads/mytest/mern-cicd-ui-api/mongodb_data:/data/db

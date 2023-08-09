@@ -14,7 +14,7 @@ function App() {
     <div>
       <h1>MERN Stack Application Dockerization.</h1>
       <h2>UI Dashboard</h2>
-      <h3>Ropstam Solutions Inc.</h3>
+      <h3>Ropstam Solutions</h3>
       <ul>
         {data.map((item) => (
           <li key={item.id}>{item.name}</li>

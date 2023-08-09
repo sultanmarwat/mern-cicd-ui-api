@@ -5,6 +5,7 @@ services:
     build:
       context: ./ui
       dockerfile: Dockerfile
+    #d/f name on ui and api and tage them on jenkins otherwise every build create <none> images
     image: frontend-img:ui
     ports:
       - "3000:3000"
@@ -14,6 +15,7 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
+    #d/f name on ui and api and tage them on jenkins otherwise every build create <none> images 
     image: backend-img:api
     ports:
       - "5000:5000"

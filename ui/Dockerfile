@@ -5,13 +5,15 @@ FROM node:14
 WORKDIR /app
 
 # Copy the package.json and package-lock.json files to the container
-COPY package*.json ./
+#COPY package*.json ./
+
+COPY . .
 
 # Install dependencies
 RUN npm install --force
 
 # Copy all frontend files to the container
-COPY . .
+#COPY . .
 
 # Expose the frontend server port (change this if your app runs on a different port)
 #EXPOSE 3000
@@ -19,8 +21,6 @@ COPY . .
 # Build the React app for dev
 RUN npm run build
 
-# Install `serve` to run the application.
-#RUN npm install -g serve
 
 # Serve the built React app using a simple HTTP server
 #CMD ["npx", "serve", "-s", "build"]

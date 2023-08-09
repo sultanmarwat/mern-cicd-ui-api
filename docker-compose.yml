@@ -1,18 +1,20 @@
 version: '3'
 services:
   ui:
-    image: 494234474945.dkr.ecr.us-east-2.amazonaws.com/cicd-jenkins-docker:ui
+   # image: 494234474945.dkr.ecr.us-east-2.amazonaws.com/cicd-jenkins-docker:ui
     build:
       context: ./ui
       dockerfile: Dockerfile
+    image: frontend-img:ui
     ports:
       - "3000:3000"
 
   api:
-    image: 494234474945.dkr.ecr.us-east-2.amazonaws.com/cicd-jenkins-docker:api
+   # image: 494234474945.dkr.ecr.us-east-2.amazonaws.com/cicd-jenkins-docker:api
     build:
       context: ./api
       dockerfile: Dockerfile
+    image: backend-img:api
     ports:
       - "5000:5000"
     depends_on:

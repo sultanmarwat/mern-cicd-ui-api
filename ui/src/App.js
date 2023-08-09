@@ -13,7 +13,8 @@ function App() {
   return (
     <div>
       <h1>MERN Stack Application Dockerization.</h1>
-      <h2>UI Dashboard..</h2>
+      <h2>UI Dashboard</h2>
+      <h3>Ropstam Solutions Inc.</h3>
       <ul>
         {data.map((item) => (
           <li key={item.id}>{item.name}</li>
